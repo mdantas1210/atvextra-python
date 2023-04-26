@@ -1,0 +1,17 @@
+create database biblioteca;
+use biblioteca;
+
+CREATE TABLE livros(
+id_livro INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+titulo VARCHAR(60),
+autor VARCHAR(60),
+preco decimal,
+num_exemplares INT
+);
+
+CREATE TABLE clientes(
+id_cliente INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
+nome VARCHAR(60),
+email VARCHAR(60),
+senha VARCHAR(16)
+);
